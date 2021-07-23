@@ -41,7 +41,7 @@ questionCount = inputField.value;
 if (questionCount >= 3) {
   root.innerHTML = null;
   root.appendChild (loadingscreen);
-  question = await getQuestion(questionCount);
+  questions = await getQuestion(questionCount);
   root.innerHTML = null;
   paintQuestion (questionId , "next");
 }

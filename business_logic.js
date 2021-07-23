@@ -1,15 +1,16 @@
 function parseQuestion (rawQuestion) {
-const formattedQuestion = [];
+const formattedQuestions = [];
 for (let question of rawQuestion) {
 const formattedQuestion = {
     question: question.question,
-    Option: [question.correct_answer, ...question.incorrect_answer],
+    Option: [question.correct_answer, ...question.incorrect_answers],
     correct_answer: question.correct_answer,
      
 };
-    formattedQuestion.push(formattedQuestion);
+// typo error was here
+    formattedQuestions.push(formattedQuestion);
 }
-    return formattedQuestion;
+    return formattedQuestions;
 
 }
 
